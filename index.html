@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Html : The Thing Of Webdev :D</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <meta charset="UTF-8" />
   <body>
@@ -13,7 +14,7 @@
     <h5>Html : The Thing Of Webdev :D</h5>
     <h6>Html : The Thing Of Webdev :D</h6>
     -->
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
 
       <nav>
@@ -35,7 +36,7 @@
           height="50"
         />
 
-        <p>
+        <p class="related-author">
           Posted by <strong>Mr Meater</strong> on Friday, 07 Feb 2025 (all code
           was plagerized for the purposes of learning)
         </p>
@@ -104,7 +105,7 @@
     </article>
     <aside>
       <h3><strong>Related Posts</strong></h3>
-      <ul>
+      <ul class="related">
         <li>
           <img
             src="img/related-1.jpg"
@@ -112,7 +113,7 @@
             width="50"
             height="50"
           /><a href="#" target="_blank"> Link To Man Typing </a>
-          <p>Written By That Man Who is Typing !</p>
+          <p class="related-author">Written By That Man Who is Typing !</p>
         </li>
         <li>
           <img
@@ -123,7 +124,7 @@
           /><a href="#" target="_blank">
             Link To The Sky Durring a Thunderstorm</a
           >
-          <p>Written By The Sky</p>
+          <p class="related-author">Written By The Sky</p>
         </li>
         <li>
           <img
@@ -132,10 +133,12 @@
             height="50"
             width="50"
           /><a href="ShoeStore.html" target="_blank">Link To More Code</a>
-          <p>Written By Me I Wrote The Code</p>
+          <p class="related-author">Written By Me I Wrote The Code</p>
         </li>
       </ul>
     </aside>
   </body>
-  <footer>article is copyrighted &copy; and stuff</footer>
+  <footer>
+    <p id="copyright">Article is copyrighted &copy; and stuff</p>
+  </footer>
 </html>

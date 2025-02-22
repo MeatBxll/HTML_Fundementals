@@ -1,0 +1,42 @@
+body {
+  font-size: 24px;
+  font-family: sans-serif;
+  border: 5px solid rgb(21, 43, 117);
+}
+.main-header {
+  color: rgb(39, 99, 167);
+  border-bottom: 5px solid rgb(21, 43, 117);
+  background-color: #f7f7f7;
+  text-align: center;
+}
+a:link,
+a:visited {
+  color: rgb(39, 99, 167);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: rgb(168, 92, 41);
+  font-weight: bold;
+  text-decoration: underline;
+}
+.price {
+  font-size: 35px;
+}
+
+.product-details-list {
+  list-style: square;
+}
+button {
+  font-size: 30px;
+  background-color: rgb(39, 99, 167);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(168, 92, 41);
+  /* color: rgb(39, 99, 167); */
+  cursor: pointer;
+}
