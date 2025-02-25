@@ -22,10 +22,24 @@ article {
   border-bottom: 5px solid rgb(21, 43, 117);
   background-color: #f7f7f7;
   text-align: center;
+  position: relative;
 }
+.main-header::after {
+  content: "SALE";
+  letter-spacing: 3px;
+  position: absolute;
+  padding: 5px 5px;
+  color: #ffffff;
+  background-color: #ff0000;
+  font-size: 10px;
+  top: -25px;
+  left: -20px;
+}
+
 h3 {
   margin: 10px auto;
 }
+
 a:link,
 a:visited {
   color: rgb(39, 99, 167);
@@ -44,6 +58,35 @@ a:active {
   text-decoration: underline;
   margin-bottom: 10px;
 }
+
+.shoe-colors {
+  padding: 10px 10px;
+}
+.color {
+  height: 22px;
+  width: 22px;
+  background-color: black;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.brown {
+  background-color: brown;
+}
+
 .price {
   font-size: 35px;
 }
