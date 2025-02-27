@@ -1,7 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 body {
   height: 1000px;
   font-size: 24px;
@@ -118,4 +120,24 @@ button:hover {
   cursor: pointer;
   border-top: 5px solid rgb(21, 43, 117);
   width: 100%;
+}
+
+.shoe-img {
+  float: left;
+  width: 33%;
+  clear: both;
+}
+
+.first-section {
+  float: left;
+  display: inline-block;
+  width: 33%;
+  padding: 30px 30px;
+}
+
+.secondSection {
+  float: right;
+  width: 33%;
+  clear: both;
+  padding: 30px 30px;
 }

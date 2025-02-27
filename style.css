@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
   position: relative;
 }
 .container {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -51,7 +52,7 @@ h1::first-letter {
 
 h2 {
   font-size: 40px;
-  margin: bottom 30px;
+  margin-bottom: 30px;
   position: relative;
 }
 
@@ -79,6 +80,11 @@ h4 {
   font-size: 40px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
+}
+
+.author {
+  font-size: 18px;
 }
 
 p {
@@ -131,14 +137,14 @@ nav a:link:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 a:link {
@@ -176,4 +182,43 @@ button {
 
   bottom: 50px;
   right: 50px;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear-fix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
 }
