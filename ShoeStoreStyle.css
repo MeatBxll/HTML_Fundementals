@@ -5,139 +5,163 @@
 }
 
 body {
-  height: 1000px;
-  font-size: 24px;
   font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .container {
-  width: 825px;
-  margin: 0 auto;
+  /*   background-color: red; */
+  display: flex;
+  gap: 40px;
 }
 
-article {
-  margin-top: 25px;
-  border: 5px solid rgb(21, 43, 117);
+.product-img {
 }
-.main-header {
-  color: rgb(39, 99, 167);
-  border-bottom: 5px solid rgb(21, 43, 117);
-  background-color: #f7f7f7;
-  text-align: center;
+
+/* PRODUCT */
+.product {
+  border: 4px solid black;
+  width: 825px;
+  margin: 50px auto;
   position: relative;
 }
-.main-header::after {
-  content: "SALE";
-  letter-spacing: 3px;
-  position: absolute;
-  padding: 5px 5px;
-  color: #ffffff;
-  background-color: #ff0000;
-  font-size: 10px;
-  top: -25px;
-  left: -20px;
+
+.product-title {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+  padding: 15px;
 }
 
-h3 {
-  margin: 10px auto;
+/* PRODUCT INFORMATION */
+.product-info {
+  /*  (825 - 8 - 250 - 80) / 2  */
+  /*   width: 243px; */
+  flex: 1;
+  margin-top: 20px;
 }
 
-a:link,
-a:visited {
-  color: rgb(39, 99, 167);
-  text-decoration: none;
-  margin-bottom: 10px;
-}
-
-p {
-  margin-bottom: 10px;
-}
-
-a:hover,
-a:active {
-  color: rgb(168, 92, 41);
-  font-weight: bold;
-  text-decoration: underline;
-  margin-bottom: 10px;
-}
-
-.shoe-colors {
-  padding: 10px 10px;
-}
-.color {
-  height: 22px;
-  width: 22px;
-  background-color: black;
-  display: inline-block;
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
-.blue {
-  background-color: blue;
-}
-.red {
-  background-color: red;
-}
-.yellow {
-  background-color: yellow;
-}
-.green {
-  background-color: green;
-}
-.brown {
-  background-color: brown;
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .price {
-  font-size: 35px;
+  font-size: 24px;
 }
 
-.product-details-list {
-  list-style: square;
+.shipping {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #777;
 }
 
-ul {
-  margin-bottom: 20px;
-  margin-left: 60px;
+.sale {
+  background-color: #ec2f2f;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 7px 15px;
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+
+  /*   width: 40px;
+  text-align: center; */
 }
-li {
+
+.product-description {
+  margin-bottom: 10px;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+.product-colors {
+  display: flex;
+  gap: 10px;
+}
+
+.color {
+  background-color: #000;
+  height: 22px;
+  width: 22px;
+}
+
+.color-blue {
+  background-color: #2f6ee2;
+}
+.color-red {
+  background-color: #ec2f2f;
+}
+.color-yellow {
+  background-color: #f0bf1e;
+}
+.color-green {
+  background-color: #90cc20;
+}
+.color-brown {
+  background-color: #885214;
+}
+
+/* PRODUCT DETAILS */
+.product-details {
+  /*   width: 243px; */
+  margin-top: 20px;
+  flex: 1;
+}
+
+.details-title {
+  text-transform: uppercase;
+  font-size: 16px;
   margin-bottom: 15px;
 }
 
-button {
-  font-size: 30px;
-  background-color: rgb(39, 99, 167);
+.details-list {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.add-cart {
+  background-color: #000;
+  border: none;
   color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
   cursor: pointer;
+  padding: 15px;
   width: 100%;
-  height: 100px;
+  border-top: 4px solid black;
 }
 
-button:hover {
-  background-color: rgb(168, 92, 41);
-  /* color: rgb(39, 99, 167); */
-  cursor: pointer;
-  border-top: 5px solid rgb(21, 43, 117);
-  width: 100%;
-}
-
-.shoe-img {
-  float: left;
-  width: 33%;
-  clear: both;
-}
-
-.first-section {
-  float: left;
-  display: inline-block;
-  width: 33%;
-  padding: 30px 30px;
-}
-
-.secondSection {
-  float: right;
-  width: 33%;
-  clear: both;
-  padding: 30px 30px;
+.add-cart:hover {
+  color: #000;
+  background-color: #fff;
 }
